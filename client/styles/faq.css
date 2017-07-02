@@ -1,0 +1,50 @@
+body {
+  background-color: #F6FBFB; }
+
+.top-container {
+  background-image: linear-gradient(45deg, #D4145A, #FBB03B); }
+  .top-container h1 {
+    color: white !important; }
+
+.faq {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0; }
+  .faq .container {
+    width: 95%;
+    max-width: 700px; }
+    .faq .container .f {
+      margin-bottom: 40px;
+      border-radius: 4px;
+      background-color: white;
+      box-shadow: 0 2px 30px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column; }
+      .faq .container .f .top, .faq .container .f .bottom {
+        display: flex;
+        justify-content: space-between; }
+      .faq .container .f .top > .right {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+      .faq .container .f .top > .left {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7); }
+      .faq .container .f .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #736EFE;
+        width: 10%;
+        box-sizing: border-box;
+        padding: 20px; }
+        .faq .container .f .left p {
+          color: white;
+          font-size: 30px;
+          font-weight: 700; }
+      .faq .container .f .right {
+        width: 90%;
+        box-sizing: border-box;
+        padding: 20px; }
+
+/*# sourceMappingURL=faq.css.map */
