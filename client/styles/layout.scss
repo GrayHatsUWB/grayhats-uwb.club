@@ -31,3 +31,24 @@ nav {
         }
     }
 }
+
+@media (max-width: 650px){
+    nav{
+        align-items: flex-start;
+        .nav-right{
+            ul{
+                flex-direction: column !important;
+                li{
+                    margin: 0 0 5px !important;
+                }
+                a{
+                    float: right;
+                }
+            }
+        }
+        .nav-full{
+            align-items: flex-start;
+            padding: 13px 5px;
+        }
+    }
+}

@@ -102,12 +102,12 @@
   .challenge-yourself h1 {
     color: #191342;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 3em;
     text-align: center;
     margin-bottom: 10px; }
   .challenge-yourself p {
     text-align: center;
-    font-size: 20px;
+    font-size: 1.2em;
     color: #444444; }
   .challenge-yourself .bottom {
     height: 300px;
@@ -116,9 +116,10 @@
   .challenge-yourself img {
     display: flex;
     margin: auto;
-    width: 500px;
     position: relative;
-    top: 40px; }
+    top: 40px;
+    width: 95%;
+    max-width: 500px; }
 
 .come-prepared {
   width: 100%;
@@ -140,7 +141,7 @@
   .come-prepared h1, .come-prepared h2, .come-prepared p, .come-prepared li {
     color: white;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.3em;
     text-align: center; }
   .come-prepared p {
     text-align: left;
@@ -159,6 +160,11 @@
     font-weight: 700;
     font-size: 50px; }
 
+@media (max-width: 900px) {
+  .learn .learn-right {
+    display: none !important; }
+  .learn .learn-left {
+    width: 100%; } }
 .lets-go {
   display: flex;
   justify-content: center;

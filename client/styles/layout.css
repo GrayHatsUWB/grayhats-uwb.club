@@ -25,4 +25,17 @@ nav {
       font-size: 15px;
       color: #191342; }
 
+@media (max-width: 650px) {
+  nav {
+    align-items: flex-start; }
+    nav .nav-right ul {
+      flex-direction: column !important; }
+      nav .nav-right ul li {
+        margin: 0 0 5px !important; }
+      nav .nav-right ul a {
+        float: right; }
+    nav .nav-full {
+      align-items: flex-start;
+      padding: 13px 5px; } }
+
 /*# sourceMappingURL=layout.css.map */

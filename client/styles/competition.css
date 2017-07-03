@@ -9,11 +9,11 @@
     width: 95%;
     max-width: 700px; }
   .top-container h1 {
-    font-size: 50px;
+    font-size: 3.2em;
     color: #191342;
     font-weight: 700; }
   .top-container h2 {
-    font-size: 25px;
+    font-size: 1.8em;
     color: #191342;
     font-weight: 500; }
 
@@ -32,19 +32,19 @@
   display: table;
   margin: 50px auto 200px; }
 .explanation h3, .contact h3 {
-  margin-top: 30px;
+  margin-top: 1.9em;
   color: #191342;
   font-weight: 700;
   font-size: 19px; }
 .explanation p, .contact p {
   color: #444;
   font-weight: 300;
-  font-size: 19px; }
+  font-size: 1.2em; }
 
 ol {
   margin-top: 40px; }
   ol li {
-    font-size: 19px;
+    font-size: 1.2em;
     color: #444444;
     font-weight: 300;
     margin-bottom: 10px; }

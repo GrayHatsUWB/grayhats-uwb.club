@@ -1,0 +1,44 @@
+.top-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #eff7f8; }
+  .top-container img {
+    position: absolute;
+    width: 110%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+    object-fit: cover;
+    min-height: 100%; }
+  .top-container h1 {
+    color: #191342;
+    font-size: 4em;
+    font-weight: 700;
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.4); }
+
+nav {
+  z-index: 10000; }
+
+.prepare {
+  width: 95%;
+  max-width: 600px;
+  display: table;
+  margin: 60px auto 120px; }
+
+a {
+  color: #04befe; }
+
+p {
+  opacity: 0.9;
+  font-size: 1.2em;
+  color: #444;
+  margin-bottom: 20px;
+  font-weight: 300; }
+
+/*# sourceMappingURL=prepare.css.map */
