@@ -50,7 +50,8 @@ body {
         font-weight: 300;
         box-sizing: border-box; }
         .top-container .top-inner > .right .s .left {
-          width: 30%; }
+          width: 30%;
+          min-width: 120px; }
         .top-container .top-inner > .right .s .right {
           width: 70%; }
 

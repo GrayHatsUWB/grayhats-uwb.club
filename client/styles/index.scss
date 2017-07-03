@@ -195,7 +195,8 @@
         justify-content: flex-start;
         width: 95%;
         flex-direction: column;
-        margin: 30px 0;
+        margin: 30px 0 30px 30px;
+        
     }
     h1 {
         font-weight: 700;
@@ -212,7 +213,11 @@
             width: 100%;
         }
     }
-
+    .challenge-yourself{
+        img{
+            top: 70px;
+        }
+    }
 }
 
 .lets-go {

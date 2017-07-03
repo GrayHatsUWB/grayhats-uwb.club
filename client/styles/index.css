@@ -155,7 +155,7 @@
     justify-content: flex-start;
     width: 95%;
     flex-direction: column;
-    margin: 30px 0; }
+    margin: 30px 0 30px 30px; }
   .come-prepared h1 {
     font-weight: 700;
     font-size: 50px; }
@@ -164,7 +164,10 @@
   .learn .learn-right {
     display: none !important; }
   .learn .learn-left {
-    width: 100%; } }
+    width: 100%; }
+
+  .challenge-yourself img {
+    top: 70px; } }
 .lets-go {
   display: flex;
   justify-content: center;
