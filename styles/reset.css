@@ -1,9 +1,4 @@
 @font-face {
-    font-family: "My Custom Font";
-    src: url(../client/fonts/A) format("truetype");
-}
-
-@font-face {
     font-family: 'Avenir Next';
     src: url(../fonts/AvenirNextLTPro-Regular.otf) format('otf');
     font-weight: normal;

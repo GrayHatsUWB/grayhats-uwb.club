@@ -1,0 +1,34 @@
+#app {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black; }
+  #app > div {
+    opacity: 0.8;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.left img {
+  width: 100px; }
+
+.right {
+  justify-content: flex-start !important; }
+  .right .read {
+    width: 95%;
+    max-width: 400px; }
+    .right .read p, .right .read h2, .right .read a {
+      color: white;
+      font-size: 1.23rem;
+      font-family: monospace; }
+    .right .read a {
+      opacity: 0.7;
+      font-size: 1em; }
+    .right .read h2 {
+      margin-bottom: 6px;
+      font-weight: 600;
+      font-size: 1.4rem;
+      margin-top: 30px; }
+
+/*# sourceMappingURL=index.css.map */

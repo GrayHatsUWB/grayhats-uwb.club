@@ -1,0 +1,44 @@
+#app {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    > div {
+        opacity: 0.8;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.left {
+    img {
+        width: 100px;
+    }
+}
+
+.right{
+    justify-content: flex-start !important;
+    .read {
+        width: 95%;
+        max-width: 400px;
+
+        p, h2, a {
+            color: white;
+            font-size: 1.23rem;
+            font-family: monospace;
+        }
+        a {
+            opacity: 0.7;
+            font-size: 1em;
+        }
+        h2{
+            margin-bottom: 6px;
+            font-weight: 600;
+            font-size: 1.4rem;
+            margin-top: 30px;
+        }
+    }  
+}
+
