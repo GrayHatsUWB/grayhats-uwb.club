@@ -1,34 +1,69 @@
 #app {
   display: flex;
-  flex-direction: row;
+  flex-direction: column; }
+
+.top {
+  width: 100%;
+  height: 400px;
+  background-color: #F5F5F5;
+  display: flex;
   justify-content: center;
-  background-color: black; }
-  #app > div {
-    opacity: 0.8;
-    width: 50%;
+  align-items: center; }
+  .top div {
     display: flex;
     align-items: center;
-    justify-content: center; }
+    flex-direction: column; }
+  .top img {
+    width: 100px; }
+  .top h1 {
+    color: #444;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
-.left img {
-  width: 100px; }
+.bottom {
+  width: 95%;
+  margin: 70px auto 50px;
+  display: flex;
+  max-width: 500px;
+  flex-direction: column; }
+  .bottom h2, .bottom h3 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  .bottom h3 {
+    font-size: 20px; }
+  .bottom p {
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 300; }
+  .bottom a {
+    color: #007ee5; }
+  .bottom .read {
+    margin-bottom: 40px;
+    width: 100%; }
 
-.right {
-  justify-content: flex-start !important; }
-  .right .read {
-    width: 95%;
-    max-width: 400px; }
-    .right .read p, .right .read h2, .right .read a {
-      color: white;
-      font-size: 1.23rem;
-      font-family: monospace; }
-    .right .read a {
-      opacity: 0.7;
-      font-size: 1em; }
-    .right .read h2 {
-      margin-bottom: 6px;
-      font-weight: 600;
-      font-size: 1.4rem;
-      margin-top: 30px; }
+.download .download-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px; }
+.download .download-links a {
+  padding: 8px 10px;
+  color: white;
+  display: table;
+  font-weight: 500;
+  font-size: 0.85rem;
+  background-color: #007ee5;
+  border-radius: 2px;
+  margin-right: 10px; }
+.download hr {
+  height: 0;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 40px 0;
+  width: 100%; }
 
 /*# sourceMappingURL=index.css.map */
