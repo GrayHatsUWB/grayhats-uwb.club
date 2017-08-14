@@ -3,7 +3,8 @@ nav {
     position: absolute;
     left: 0;
     top: 0;
-    height: 65px;
+    height: auto;
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +33,8 @@ nav {
     }
 }
 
-@media (max-width: 650px){
+@media (max-width: 675px){
+    
     nav{
         align-items: flex-start;
         .nav-right{
@@ -48,7 +50,7 @@ nav {
         }
         .nav-full{
             align-items: flex-start;
-            padding: 13px 5px;
+            padding: 0 5px;
         }
     }
 }
