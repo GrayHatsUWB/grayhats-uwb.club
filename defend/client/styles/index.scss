@@ -31,7 +31,8 @@
             font-size: 30px;
         }
         img {
-            width: 100px;
+            width: 150px;
+            filter: drop-shadow(0 2px 10px rgba(0,0,0,0.2));
             margin-bottom: 30px;
         }
 
@@ -47,7 +48,7 @@
             position: relative;
             top: 0;
         }
-        
+
         .sign-up:hover {
             transition: all 0.1s ease-in-out;
             top: -3px;
@@ -55,6 +56,7 @@
         }
     }
 }
+
 .learn-more {
     transition: all 0.1s ease-in-out;
     color: #476D7C;
@@ -62,6 +64,7 @@
     font-size: 14px;
     margin-top: 20px;
 }
+
 .learn-more:hover {
     transition: all 0.1s ease-in-out;
     color: #CF4647;
@@ -159,20 +162,20 @@
     height: 700px;
     background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
     display: flex;
-    justify-content:center;
-    align-items:center;
-    
-    .center{
+    justify-content: center;
+    align-items: center;
+
+    .center {
         display: flex;
         align-items: center;
         flex-direction: column;
         width: 95%;
         max-width: 500px;
     }
-    .learn-more{
-        color: rgba(255,255,255,0.5);
+    .learn-more {
+        color: rgba(255, 255, 255, 0.5);
     }
-    .learn-more:hover{
+    .learn-more:hover {
         color: white;
     }
     h1, h2, p, li {
@@ -181,22 +184,22 @@
         font-size: 1.3em;
         text-align: center;
     }
-    p{
+    p {
         text-align: left;
         margin-top: 20px;
     }
-    li{
+    li {
         float: left;
         text-align: left;
     }
-    ul{
+    ul {
         list-style: disc;
         display: flex;
         justify-content: flex-start;
         width: 95%;
         flex-direction: column;
         margin: 30px 0 30px 30px;
-        
+
     }
     h1 {
         font-weight: 700;
@@ -205,16 +208,16 @@
 }
 
 @media (max-width: 900px) {
-    .learn{
-        .learn-right{
+    .learn {
+        .learn-right {
             display: none !important;
         }
-        .learn-left{
+        .learn-left {
             width: 100%;
         }
     }
-    .challenge-yourself{
-        img{
+    .challenge-yourself {
+        img {
             top: 70px;
         }
     }
