@@ -52,6 +52,7 @@
         font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 18px;
         font-weight: 300;
+        margin-bottom: 10px;
     }
 
     a {
@@ -59,8 +60,41 @@
     }
 
     .read {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         width: 100%;
+    }
+
+    .social-media {
+        margin-top: 8px;
+    }
+
+    .get-involved input {
+        margin-top: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        width: 100%;
+        border-radius: 4px;
+        padding: 8px 6px;
+        font-size: 1rem;
+    }
+
+    .get-involved form button {
+        margin: 10px 0 20px;
+    }
+
+    .social-media a {
+        display: flex;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        width: 40px;
+        height: 40px;
+        float: left;
+        margin-right: 10px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
     }
 }
 
@@ -71,16 +105,6 @@
         align-items: center;
         margin-top: 15px;
     }
-    .download-links a {
-        padding: 8px 10px;
-        color: white;
-        display: table;
-        font-weight: 500;
-        font-size: 0.85rem;
-        background-color: #007ee5;
-        border-radius: 2px;
-        margin-right: 10px;
-    }
     hr {
         height: 0;
         border: 0;
@@ -88,4 +112,15 @@
         margin: 40px 0;
         width: 100%;
     }
+}
+
+.download-links a, .get-involved form button {
+    padding: 8px 10px;
+    color: white;
+    display: table;
+    font-weight: 500;
+    font-size: 0.85rem;
+    background-color: #007ee5;
+    border-radius: 2px;
+    margin-right: 10px;
 }
