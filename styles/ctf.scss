@@ -1,0 +1,139 @@
+.ctf {
+    background-image: linear-gradient(135deg, #97ABFF 10%, #123597 100%);
+
+    .background-texture {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        opacity: 0.5;
+        left: 0;
+        top: 0;
+
+        background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+    }
+
+    .card-container {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin: 50px auto;
+        max-width: 1000px;
+
+        .column {
+            width: 23.2%;
+
+            h1 {
+                font-size: 0.8rem;
+                margin-bottom: 10px;
+                font-weight: 500;
+                color: white;
+                font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            }
+        }
+        .card {
+            cursor: pointer;
+            padding: 30px 15px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            background-color: white;
+            width: 100%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
+
+            h2 {
+                font-size: 1rem;
+                font-weight: 500;
+                opacity: 0.7;
+                font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            }
+        }
+    }
+    .pop-up {
+        position: absolute;
+        left: 0;
+        display: none;
+        top: 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+        position: fixed;
+        width: 100%;
+        cursor: pointer;
+        z-index: 100;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: flex-start;
+
+        .center {
+            margin-top: 150px;
+            background-color: white;
+            padding: 40px;
+            width: 95%;
+            cursor: default;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
+        .submit {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 40px;
+        }
+        .title {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .img {
+            width: 100%;
+            margin-top: 10px;
+            display: flex;
+            border-radius: 4px;
+            box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+        }
+        p {
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            margin-right: 10px;
+            height: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            font-size: 1rem;
+            border-radius: 3px;
+            padding: 0 10px;
+        }
+        .ip {
+            opacity: 0.7;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+        .download {
+            display: table;
+            color: #007ee5;
+            margin-top: 20px;
+        }
+        .submit {
+            margin-top: 15px;
+        }
+        button {
+            background-color: #007ee5;
+            color: white;
+            border-radius: 3px;
+            width: 90px;
+            font-weight: 500;
+            font-size: 0.7rem;
+            height: 100%;
+        }
+        .pop-up-error {
+            color: #CF4647;
+            font-size: 0.9rem;
+            margin-top: 6px;
+            display: none;
+        }
+    }
+    .show-pop-up {
+        display: flex;
+    }
+}
