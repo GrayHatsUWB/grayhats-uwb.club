@@ -79,13 +79,13 @@ function readCookie(name) {
 $('.card').click(function () {
 	var elem = $(this)[0];
 	var pop = $('.pop-up');
-	console.log(popUp[elem.id].image);
 	pop.find('.title').html(popUp[elem.id].title || '');
 	pop.find('.text').html(popUp[elem.id].text || '');
 	pop.find('.img').attr('src', popUp[elem.id].image || '');
 	pop.find('.ip').html(popUp[elem.id].ip || '');
 	pop.find('.link').html(popUp[elem.id].href || '').attr('href', popUp[elem.id].href || '');
-	pop.find('.download').html(popUp[elem.id].download || '').attr('href', popUp[elem.id].download || '');
+	pop.find('.download').html(popUp[elem.id].download || '')
+	pop.find('.download').attr('href', popUp[elem.id].download || '');
 	pop.find('input').val('');
 	pop.addClass('show-pop-up');
 	selectedPop = elem.id;
