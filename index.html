@@ -30,29 +30,196 @@
 </head>
 <body>
 <div id="app">
-	<div class="top">
-		<div>
+	<section class="top">
+		<div class="background-cover">
+			<p>
+				/*! jQuery v3.2.1 | (c) JS Foundation and other contributors | jquery.org/license */
+				!function(a,b){&quot;use strict&quot;;&quot;object&quot;==typeof module&amp;&amp;&quot;object&quot;==typeof
+				module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw
+				new Error(&quot;jQuery requires a window with a document&quot;);return b(a)}:b(a)}(&quot;undefined&quot;!=typeof
+				window?window:this,function(a,b){&quot;use strict&quot;;var
+				c=[],d=a.document,e=Object.getPrototypeOf,f=c.slice,g=c.concat,h=c.push,i=c.indexOf,j={},k=j.toString,l=j.hasOwnProperty,m=l.toString,n=m.call(Object),o={};function
+				p(a,b){b=b||d;var c=b.createElement(&quot;script&quot;);c.text=a,b.head.appendChild(c).parentNode.removeChild(c)}var
+				q=&quot;3.2.1&quot;,r=function(a,b){return new
+				r.fn.init(a,b)},s=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,t=/^-ms-/,u=/-([a-z])/g,v=function(a,b){return
+				b.toUpperCase()};r.fn=r.prototype={jquery:q,constructor:r,length:0,toArray:function(){return
+				f.call(this)},get:function(a){return null==a?f.call(this):a&lt;0?this[a+this.length]:this[a]},pushStack:function(a){var
+				b=r.merge(this.constructor(),a);return b.prevObject=this,b},each:function(a){return
+				r.each(this,a)},map:function(a){return
+				this.pushStack(r.map(this,function(b,c){return
+				a.call(b,c,b)}))},slice:function(){return
+				this.pushStack(f.apply(this,arguments))},first:function(){return
+				this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var
+				b=this.length,c=+a+(a&lt;0?b:0);return this.pushStack(c&gt;=0&amp;&amp;c&lt;b?[this[c]]:[])},end:function(){return
+				this.prevObject||this.constructor()},push:h,sort:c.sort,splice:c.splice},r.extend=r.fn.extend=function(){var
+				a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for(&quot;boolean&quot;==typeof
+				g&amp;&amp;(j=g,g=arguments[h]||{},h++),&quot;object&quot;==typeof
+				g||r.isFunction(g)||(g={}),h===i&amp;&amp;(g=this,h--);h&lt;i;h++)if(null!=(a=arguments[h]))for(b
+				in a)c=g[b],d=a[b],g!==d&amp;&amp;(j&amp;&amp;d&amp;&amp;(r.isPlainObject(d)||(e=Array.isArray(d)))?(e?(e=!1,f=c&amp;&amp;Array.isArray(c)?c:[]):f=c&amp;&amp;r.isPlainObject(c)?c:{},g[b]=r.extend(j,f,d)):void
+				0!==d&amp;&amp;(g[b]=d));return g},r.extend({expando:&quot;jQuery&quot;+(q+Math.random()).replace(/\D/g,&quot;&quot;),isReady:!0,error:function(a){throw
+				new Error(a)},noop:function(){},isFunction:function(a){return&quot;function&quot;===r.type(a)},isWindow:function(a){return
+				null!=a&amp;&amp;a===a.window},isNumeric:function(a){var b=r.type(a);return(&quot;number&quot;===b||&quot;string&quot;===b)&amp;&amp;!isNaN(a-parseFloat(a))},isPlainObject:function(a){var
+				b,c;return!(!a||&quot;[object Object]&quot;!==k.call(a))&amp;&amp;(!(b=e(a))||(c=l.call(b,&quot;constructor&quot;)&amp;&amp;b.constructor,&quot;function&quot;==typeof
+				c&amp;&amp;m.call(c)===n))},isEmptyObject:function(a){var b;for(b in
+				a)return!1;return!0},type:function(a){return null==a?a+&quot;&quot;:&quot;object&quot;==typeof
+				a||&quot;function&quot;==typeof a?j[k.call(a)]||&quot;object&quot;:typeof
+				a},globalEval:function(a){p(a)},camelCase:function(a){return a.replace(t,&quot;ms-&quot;).replace(u,v)},each:function(a,b){var
+				c,d=0;if(w(a)){for(c=a.length;d&lt;c;d++)if(b.call(a[d],d,a[d])===!1)break}else
+				for(d in a)if(b.call(a[d],d,a[d])===!1)break;return a},trim:function(a){return
+				null==a?&quot;&quot;:(a+&quot;&quot;).replace(s,&quot;&quot;)},makeArray:function(a,b){var
+				c=b||[];return null!=a&amp;&amp;(w(Object(a))?r.merge(c,&quot;string&quot;==typeof
+				a?[a]:a):h.call(c,a)),c},inArray:function(a,b,c){return
+				null==b?-1:i.call(b,a,c)},merge:function(a,b){for(var c=+b.length,d=0,e=a.length;d&lt;c;d++)a[e++]=b[d];return
+				a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;f&lt;g;f++)d=!b(a[f],f),d!==h&amp;&amp;e.push(a[f]);return
+				e},map:function(a,b,c){var d,e,f=0,h=[];if(w(a))for(d=a.length;f&lt;d;f++)e=b(a[f],f,c),null!=e&amp;&amp;h.push(e);else
+				for(f in a)e=b(a[f],f,c),null!=e&amp;&amp;h.push(e);return
+				g.apply([],h)},guid:1,proxy:function(a,b){var c,d,e;if(&quot;string&quot;==typeof b&amp;&amp;(c=a[b],b=a,a=c),r.isFunction(a))return
+				d=f.call(arguments,2),e=function(){return
+				a.apply(b||this,d.concat(f.call(arguments)))},e.guid=a.guid=a.guid||r.guid++,e},now:Date.now,support:o}),&quot;function&quot;==typeof
+				Symbol&amp;&amp;(r.fn[Symbol.iterator]=c[Symbol.iterator]),r.each(&quot;Boolean
+				Number String Function Array Date RegExp Object Error Symbol&quot;.split(&quot;
+				&quot;),function(a,b){j[&quot;[object &quot;+b+&quot;]&quot;]=b.toLowerCase()});function
+				w(a){var b=!!a&amp;&amp;&quot;length&quot;in a&amp;&amp;a.length,c=r.type(a);return&quot;function&quot;!==c&amp;&amp;!r.isWindow(a)&amp;&amp;(&quot;array&quot;===c||0===b||&quot;number&quot;==typeof
+				b&amp;&amp;b&gt;0&amp;&amp;b-1 in a)}var x=function(a){var
+				b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u=&quot;sizzle&quot;+1*new
+				Date,v=a.document,w=0,x=0,y=ha(),z=ha(),A=ha(),B=function(a,b){return a===b&amp;&amp;(l=!0),0},C={}.hasOwnProperty,D=[],E=D.pop,F=D.push,G=D.push,H=D.slice,I=function(a,b){for(var
+				c=0,d=a.length;c&lt;d;c++)if(a[c]===b)return c;return-1},J=&quot;checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped&quot;,K=&quot;[\\x20\\t\\r\\n\\f]&quot;,L=&quot;(?:\\\\.|[\\w-]|[^\0-\\xa0])+&quot;,M=&quot;\\[&quot;+K+&quot;*(&quot;+L+&quot;)(?:&quot;+K+&quot;*([*^$|!~]?=)&quot;+K+&quot;*(?:'((?:\\\\.|[^\\\\'])*)'|\&quot;((?:\\\\.|[^\\\\\&quot;])*)\&quot;|(&quot;+L+&quot;))|)&quot;+K+&quot;*\\]&quot;,N=&quot;:(&quot;+L+&quot;)(?:\\((('((?:\\\\.|[^\\\\'])*)'|\&quot;((?:\\\\.|[^\\\\\&quot;])*)\&quot;)|((?:\\\\.|[^\\\\()[\\]]|&quot;+M+&quot;)*)|.*)\\)|)&quot;,O=new
+				RegExp(K+&quot;+&quot;,&quot;g&quot;),P=new RegExp(&quot;^&quot;+K+&quot;+|((?:^|[^\\\\])(?:\\\\.)*)&quot;+K+&quot;+$&quot;,&quot;g&quot;),Q=new
+				RegExp(&quot;^&quot;+K+&quot;*,&quot;+K+&quot;*&quot;),R=new RegExp(&quot;^&quot;+K+&quot;*([&gt;+~]|&quot;+K+&quot;)&quot;+K+&quot;*&quot;),S=new
+				RegExp(&quot;=&quot;+K+&quot;*([^\\]'\&quot;]*?)&quot;+K+&quot;*\\]&quot;,&quot;g&quot;),T=new
+				RegExp(N),U=new RegExp(&quot;^&quot;+L+&quot;$&quot;),V={ID:new RegExp(&quot;^#(&quot;+L+&quot;)&quot;),CLASS:new
+				RegExp(&quot;^\\.(&quot;+L+&quot;)&quot;),TAG:new RegExp(&quot;^(&quot;+L+&quot;|[*])&quot;),ATTR:new
+				RegExp(&quot;^&quot;+M),PSEUDO:new RegExp(&quot;^&quot;+N),CHILD:new RegExp(&quot;^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\(&quot;+K+&quot;*(even|odd|(([+-]|)(\\d*)n|)&quot;+K+&quot;*(?:([+-]|)&quot;+K+&quot;*(\\d+)|))&quot;+K+&quot;*\\)|)&quot;,&quot;i&quot;),bool:new
+				RegExp(&quot;^(?:&quot;+J+&quot;)$&quot;,&quot;i&quot;),needsContext:new RegExp(&quot;^&quot;+K+&quot;*[&gt;+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\(&quot;+K+&quot;*((?:-\\d)?\\d*)&quot;+K+&quot;*\\)|)(?=[^-]|$)&quot;,&quot;i&quot;)},W=/^(?:input|select|textarea|button)$/i,X=/^h\d$/i,Y=/^[^{]+\{\s*\[native
+				\w/,Z=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,$=/[+~]/,_=new RegExp(&quot;\\\\([\\da-f]{1,6}&quot;+K+&quot;?|(&quot;+K+&quot;)|.)&quot;,&quot;ig&quot;),aa=function(a,b,c){var
+				d=&quot;0x&quot;+b-65536;return d!==d||c?b:d&lt;0?String.fromCharCode(d+65536):String.fromCharCode(d&gt;&gt;10|55296,1023&amp;d|56320)},ba=/([\0-\x1f\x7f]|^-?\d)|^-$|[^\0-\x1f\x7f-\uFFFF\w-]/g,ca=function(a,b){return
+				b?&quot;\0&quot;===a?&quot;\ufffd&quot;:a.slice(0,-1)+&quot;\\&quot;+a.charCodeAt(a.length-1).toString(16)+&quot;
+				&quot;:&quot;\\&quot;+a},da=function(){m()},ea=ta(function(a){return a.disabled===!0&amp;&amp;(&quot;form&quot;in
+				a||&quot;label&quot;in a)},{dir:&quot;parentNode&quot;,next:&quot;legend&quot;});try{G.apply(D=H.call(v.childNodes),v.childNodes),D[v.childNodes.length].nodeType}catch(fa){G={apply:D.length?function(a,b){F.apply(a,H.call(b))}:function(a,b){var
+				c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function ga(a,b,d,e){var
+				f,h,j,k,l,o,r,s=b&amp;&amp;b.ownerDocument,w=b?b.nodeType:9;if(d=d||[],&quot;string&quot;!=typeof
+				a||!a||1!==w&amp;&amp;9!==w&amp;&amp;11!==w)return d;if(!e&amp;&amp;((b?b.ownerDocument||b:v)!==n&amp;&amp;m(b),b=b||n,p)){if(11!==w&amp;&amp;(l=Z.exec(a)))if(f=l[1]){if(9===w){if(!(j=b.getElementById(f)))return
+				d;if(j.id===f)return d.push(j),d}else if(s&amp;&amp;(j=s.getElementById(f))&amp;&amp;t(b,j)&amp;&amp;j.id===f)return
+				d.push(j),d}else{if(l[2])return G.apply(d,b.getElementsByTagName(a)),d;if((f=l[3])&amp;&amp;c.getElementsByClassName&amp;&amp;b.getElementsByClassName)return
+				G.apply(d,b.getElementsByClassName(f)),d}if(c.qsa&amp;&amp;!A[a+&quot; &quot;]&amp;&amp;(!q||!q.test(a))){if(1!==w)s=b,r=a;else
+				if(&quot;object&quot;!==b.nodeName.toLowerCase()){(k=b.getAttribute(&quot;id&quot;))?k=k.replace(ba,ca):b.setAttribute(&quot;id&quot;,k=u),o=g(a),h=o.length;while(h--)o[h]=&quot;#&quot;+k+&quot;
+				&quot;+sa(o[h]);r=o.join(&quot;,&quot;),s=$.test(a)&amp;&amp;qa(b.parentNode)||b}if(r)try{return
+				G.apply(d,s.querySelectorAll(r)),d}catch(x){}finally{k===u&amp;&amp;b.removeAttribute(&quot;id&quot;)}}}return
+				i(a.replace(P,&quot;$1&quot;),b,d,e)}function ha(){var a=[];function b(c,e){return
+				a.push(c+&quot; &quot;)&gt;d.cacheLength&amp;&amp;delete b[a.shift()],b[c+&quot;
+				&quot;]=e}return b}function ia(a){return a[u]=!0,a}function ja(a){var
+				b=n.createElement(&quot;fieldset&quot;);try{return!!a(b)}catch(c){return!1}finally{b.parentNode&amp;&amp;b.parentNode.removeChild(b),b=null}}function
+				ka(a,b){var c=a.split(&quot;|&quot;),e=c.length;while(e--)d.attrHandle[c[e]]=b}function
+				la(a,b){var c=b&amp;&amp;a,d=c&amp;&amp;1===a.nodeType&amp;&amp;1===b.nodeType&amp;&amp;a.sourceIndex-b.sourceIndex;if(d)return
+				d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function ma(a){return
+				function(b){var c=b.nodeName.toLowerCase();return&quot;input&quot;===c&amp;&amp;b.type===a}}function
+				na(a){return function(b){var c=b.nodeName.toLowerCase();return(&quot;input&quot;===c||&quot;button&quot;===c)&amp;&amp;b.type===a}}function
+				oa(a){return function(b){return&quot;form&quot;in b?b.parentNode&amp;&amp;b.disabled===!1?&quot;label&quot;in
+				b?&quot;label&quot;in
+				b.parentNode?b.parentNode.disabled===a:b.disabled===a:b.isDisabled===a||b.isDisabled!==!a&amp;&amp;ea(b)===a:b.disabled===a:&quot;label&quot;in
+				b&amp;&amp;b.disabled===a}}function pa(a){return ia(function(b){return
+				b=+b,ia(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&amp;&amp;(c[e]=!(d[e]=c[e]))})})}function
+				qa(a){return a&amp;&amp;&quot;undefined&quot;!=typeof a.getElementsByTagName&amp;&amp;a}c=ga.support={},f=ga.isXML=function(a){var
+				b=a&amp;&amp;(a.ownerDocument||a).documentElement;return!!b&amp;&amp;&quot;HTML&quot;!==b.nodeName},m=ga.setDocument=function(a){var
+				b,e,g=a?a.ownerDocument||a:v;return g!==n&amp;&amp;9===g.nodeType&amp;&amp;g.documentElement?(n=g,o=n.documentElement,p=!f(n),v!==n&amp;&amp;(e=n.defaultView)&amp;&amp;e.top!==e&amp;&amp;(e.addEventListener?e.addEventListener(&quot;unload&quot;,da,!1):e.attachEvent&amp;&amp;e.attachEvent(&quot;onunload&quot;,da)),c.attributes=ja(function(a){return
+				a.className=&quot;i&quot;,!a.getAttribute(&quot;className&quot;)}),c.getElementsByTagName=ja(function(a){return
+				a.appendChild(n.createComment(&quot;&quot;)),!a.getElementsByTagName(&quot;*&quot;).length}),c.getElementsByClassName=Y.test(n.getElementsByClassName),c.getById=ja(function(a){return
+				o.appendChild(a).id=u,!n.getElementsByName||!n.getElementsByName(u).length}),c.getById?(d.filter.ID=function(a){var
+				qa(a){return a&amp;&amp;&quot;undefined&quot;!=typeof a.getElementsByTagName&amp;&amp;a}c=ga.support={},f=ga.isXML=function(a){var
+				b=a&amp;&amp;(a.ownerDocument||a).documentElement;return!!b&amp;&amp;&quot;HTML&quot;!==b.nodeName},m=ga.setDocument=function(a){var
+				b,e,g=a?a.ownerDocument||a:v;return g!==n&amp;&amp;9===g.nodeType&amp;&amp;g.documentElement?(n=g,o=n.documentElement,p=!f(n),v!==n&amp;&amp;(e=n.defaultView)&amp;&amp;e.top!==e&amp;&amp;(e.addEventListener?e.addEventListener(&quot;unload&quot;,da,!1):e.attachEvent&amp;&amp;e.attachEvent(&quot;onunload&quot;,da)),c.attributes=ja(function(a){return
+				a.className=&quot;i&quot;,!a.getAttribute(&quot;className&quot;)}),c.getElementsByTagName=ja(function(a){return
+				a.appendChild(n.createComment(&quot;&quot;)),!a.getElementsByTagName(&quot;*&quot;).length}),c.getElementsByClassName=Y.test(n.getElementsByClassName),c.getById=ja(function(a){return
+				o.appendChild(a).id=u,!n.getElementsByName||!n.getElementsByName(u).length}),c.getById?(d.filter.ID=function(a){var
+				qa(a){return a&amp;&amp;&quot;undefined&quot;!=typeof a.getElementsByTagName&amp;&amp;a}c=ga.support={},f=ga.isXML=function(a){var
+				b=a&amp;&amp;(a.ownerDocument||a).documentElement;return!!b&amp;&amp;&quot;HTML&quot;!==b.nodeName},m=ga.setDocument=function(a){var
+				b,e,g=a?a.ownerDocument||a:v;return g!==n&amp;&amp;9===g.nodeType&amp;&amp;g.documentElement?(n=g,o=n.documentElement,p=!f(n),v!==n&amp;&amp;(e=n.defaultView)&amp;&amp;e.top!==e&amp;&amp;(e.addEventListener?e.addEventListener(&quot;unload&quot;,da,!1):e.attachEvent&amp;&amp;e.attachEvent(&quot;onunload&quot;,da)),c.attributes=ja(function(a){return
+				a.className=&quot;i&quot;,!a.getAttribute(&quot;className&quot;)}),c.getElementsByTagName=ja(function(a){return
+				a.appendChild(n.createComment(&quot;&quot;)),!a.getElementsByTagName(&quot;*&quot;).length}),c.getElementsByClassName=Y.test(n.getElementsByClassName),c.getById=ja(function(a){return
+				o.appendChild(a).id=u,!n.getElementsByName||!n.getElementsByName(u).length}),c.getById?(d.filter.ID=function(a){var
+				b.parentNode?b.parentNode.disabled===a:b.disabled===a:b.isDisabled===a||b.isDisabled!==!a&amp;&amp;ea(b)===a:b.disabled===a:&quot;label&quot;in
+				b&amp;&amp;b.disabled===a}}function pa(a){return ia(function(b){return
+				b=+b,ia(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&amp;&amp;(c[e]=!(d[e]=c[e]))})})}function
+				qa(a){return a&amp;&amp;&quot;undefined&quot;!=typeof a.getElementsByTagName&amp;&amp;a}c=ga.support={},f=ga.isXML=function(a){var
+				b=a&amp;&amp;(a.ownerDocument||a).documentElement;return!!b&amp;&amp;&quot;HTML&quot;!==b.nodeName},m=ga.setDocument=function(a){var
+				b,e,g=a?a.ownerDocument||a:v;return g!==n&amp;&amp;9===g.nodeType&amp;&amp;g.documentElement?(n=g,o=n.documentElement,p=!f(n),v!==n&amp;&amp;(e=n.defaultView)&amp;&amp;e.top!==e&amp;&amp;(e.addEventListener?e.addEventListener(&quot;unload&quot;,da,!1):e.attachEvent&amp;&amp;e.attachEvent(&quot;onunload&quot;,da)),c.attributes=ja(function(a){return
+				a.className=&quot;i&quot;,!a.getAttribute(&quot;className&quot;)}),c.getElementsByTagName=ja(function(a){return
+				a.appendChild(n.createComment(&quot;&quot;)),!a.getElementsByTagName(&quot;*&quot;).length}),c.getElementsByClassName=Y.test(n.getElementsByClassName),c.getById=ja(function(a){return
+				o.appendChild(a).id=u,!n.getElementsByName||!n.getElementsByName(u).length}),c.getById?(d.filter.ID=function(a){var
+				qa(a){return a&amp;&amp;&quot;undefined&quot;!=typeof a.getElementsByTagName&amp;&amp;a}c=ga.support={},f=ga.isXML=function(a){var
+				b=a&amp;&amp;(a.ownerDocument||a).documentElement;return!!b&amp;&amp;&quot;HTML&quot;!==b.nodeName},m=ga.setDocument=function(a){var
+				b,e,g=a?a.ownerDocument||a:v;return g!==n&amp;&amp;9===g.nodeType&amp;&amp;g.documentElement?(n=g,o=n.documentElement,p=!f(n),v!==n&amp;&amp;(e=n.defaultView)&amp;&amp;e.top!==e&amp;&amp;(e.addEventListener?e.addEventListener(&quot;unload&quot;,da,!1):e.attachEvent&amp;&amp;e.attachEvent(&quot;onunload&quot;,da)),c.attributes=ja(function(a){return
+				a.className=&quot;i&quot;,!a.getAttribute(&quot;className&quot;)}),c.getElementsByTagName=ja(function(a){return
+				a.appendChild(n.createComment(&quot;&quot;)),!a.getElementsByTagName(&quot;*&quot;).length}),c.getElementsByClassName=Y.test(n.getElementsByClassName),c.getById=ja(function(a){return
+				o.appendChild(a).id=u,!n.getElementsByName||!n.getElementsByName(u).length}),c.getById?(d.filter.ID=function(a){var
+				qa(a){return a&amp;&amp;&quot;undefined&quot;!=typeof a.getElementsByTagName&amp;&amp;a}c=ga.support={},f=ga.isXML=function(a){var
+				b=a&amp;&amp;(a.ownerDocument||a).documentElement;return!!b&amp;&amp;&quot;HTML&quot;!==b.nodeName},m=ga.setDocument=function(a){var
+				b,e,g=a?a.ownerDocument||a:v;return g!==n&amp;&amp;9===g.nodeType&amp;&amp;g.documentElement?(n=g,o=n.documentElement,p=!f(n),v!==n&amp;&amp;(e=n.defaultView)&amp;&amp;e.top!==e&amp;&amp;(e.addEventListener?e.addEventListener(&quot;unload&quot;,da,!1):e.attachEvent&amp;&amp;e.attachEvent(&quot;onunload&quot;,da)),c.attributes=ja(function(a){return
+				a.className=&quot;i&quot;,!a.getAttribute(&quot;className&quot;)}),c.getElementsByTagName=ja(function(a){return
+				a.appendChild(n.createComment(&quot;&quot;)),!a.getElementsByTagName(&quot;*&quot;).length}),c.getElementsByClassName=Y.test(n.getElementsByClassName),c.getById=ja(function(a){return
+				o.appendChild(a).id=u,!n.getElementsByName||!n.getElementsByName(u).length}),c.getById?(d.filter.ID=function(a){var
+			</p>
+		</div>
+		<div class="top-desc">
 			<img src="images/hat.png" alt="Gray Hats Logo">
 			<h1>Gray Hats</h1>
+			<a target="_blank" href="https://mailman11.u.washington.edu/mailman/listinfo/uwb-gray-hats">Join
+				The
+				Gray Side</a>
 		</div>
-	</div>
-	<div class="bottom">
-		<div class="read">
+	</section>
+	<section class="bottom">
+		<section class="read who-we-are">
 			<h2>Who We Are</h2>
 			<p>
-				We're a group people whose interest run the gamut. One thing that we can all agree
-				on, however, is that technology is powerful. It can be used for good or for evil.
-				We do our best to make sure that we leverage our skills to help instead of hurt.
-				To join us, you don't have to be technologically savvy. You just need a desire to
-				learn and provoke change.
+				We're a group of people whose interest run the gamut. One thing that we can all
+				agree on, however, is that technology is powerful. It can be used for good or for
+				evil. We do our best to make sure that we leverage our skills to help instead of
+				hurt. To join us, you don't have to be tech savvy, you just need a desire to
+				learn and provoke change!
 			</p>
 			<p>
 				Additionally we love to compete in Cyber Defense competitions and CTFs. Every
-				meeting we are learning something new from one another. If you're curious check us
+				meeting, we learn something new from one another. If you're curious, check us
 				out! We welcome all.
 			</p>
-		</div>
-		<div class="read get-involved">
+		</section>
+		<section class="read meeting">
+			<h2>Meeting Information</h2>
+			<p>
+				Every <b>Friday</b> at <b>3:00PM</b> in <b>UW1-321A</b>.
+			</p>
+		</section>
+		<section class="read learning">
+			<h2>What You Will Learn</h2>
+			<div class="learn-elem">
+				<div>
+					<div>
+						<img src="./images/python-logo.svg" alt="Python Logo">
+					</div>
+					Python
+				</div>
+				<div>
+					<div>
+						<img src="./images/html-logo.svg" alt="HTML Logo">
+					</div>
+					HTML
+				</div>
+				<div>
+					<div>
+						<img src="./images/linux-logo.svg" alt="Linux Logo">
+					</div>
+					Linux
+				</div>
+				<div>
+					<div>
+						<img src="./images/kali-logo.svg" alt="Kali Logo">
+					</div>
+					Kali
+				</div>
+			</div>
+		</section>
+		<section class="read get-involved">
 			<h2>Get Involved</h2>
 			<p>
 				<a target="_blank" href="https://mailman11.u.washington.edu/mailman/listinfo/uwb-gray-hats">
@@ -63,29 +230,26 @@
 				We have a Cyber Defense Competition next year, which you can learn more about
 				<a target="_blank" href="http://defend.grayhats.io">here</a>.
 			</p>
-		</div>
-		<div class="read">
-			<h2>Meeting</h2>
-			<p>
-				We meet in UW1-321A at 3:00 PM every Friday. Please bring an 8GB empty flash drive
-				and your laptop when you come!
-			</p>
-		</div>
-		<div class="read">
+		</section>
+		<section class="read">
 			<h2>Meeting Content</h2>
 			<p>
 				Meetings typically consist of hands on learning (bring your laptop), a talk or both.
 				We encourage you to bring us topics that you are interested in learning about.
 			</p>
-		</div>
-		<div class="read">
+		</section>
+		<section class="read">
 			<h2><a href="downloads">Downloads</a></h2>
-		</div>
-		<div class="read">
+		</section>
+		<section class="read">
 			<h2>Other Links</h2>
 			<p>Our <a target="_blank" href="https://github.com/GrayHatsCC/Wiki/wiki">Wiki</a>
-		</div>
-		<div class="read">
+		</section>
+		<section class="read contact">
+			<h2>Contact</h2>
+			<p>rublez [@] uw.edu</p>
+		</section>
+		<section class="read">
 			<h2>Social Media</h2>
 			<div class="social-media">
 				<a target="_blank" href="https://twitter.com/grayhatscc">
@@ -95,8 +259,8 @@
 					<img src="./images/github.svg" alt="GitHub social media icon">
 				</a>
 			</div>
-		</div>
-	</div>
+		</section>
+	</section>
 </div>
 </body>
 </html>

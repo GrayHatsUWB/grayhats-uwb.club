@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="canonical" href="https://grayhats.io/" />
+	<script type="text/javascript">
+		var host = "grayhats.io";
+		if ((host == window.location.host) && (window.location.protocol != 'https:')) {
+			window.location = window.location.toString().replace(/^http:/, "https:");
+		}
+	</script>
+	<link rel="stylesheet" href="../styles/reset.css">
+	<link rel="stylesheet" href="../styles/ctf.css">
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="icon" type="image/png" href="../images/hat.png">
+	<title>CTF | Gray Hats</title>
+</head>
+<body>
+<div id="app" class="ctf">
+	<div class="background-texture">
+	
+	</div>
+	<section class="back-home">
+	
+	</section>
+	<div class="pop-up">
+		<div class="center">
+			<form class="pop-up-form">
+				<h1 class="title">Title</h1>
+				<p class="text"></p>
+				<!--<img class="img" src="https://images.unsplash.com/photo-1504888302758-9adb6780e7c8?w=2768&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="">-->
+				<p class="ip"></p>
+				<a class="download" href="" download></a>
+				<div class="submit">
+					<input class="submit-input" placeholder="Answer" type="text">
+					<button>SUBMIT</button>
+				</div>
+				<p class="pop-up-error">Incorrect answer</p>
+			</form>
+		</div>
+	</div>
+	<section class="card-container">
+		<div class="column">
+			<h1>NETCAT</h1>
+			<div class="card" id="echoMyNumber">
+				<h2>Echo My #</h2>
+			</div>
+			<div class="card" id="addMyNumber">
+				<h2>Add My Number</h2>
+			</div>
+			<div class="card" id="convertMyNumber">
+				<h2>Convert My Number</h2>
+			</div>
+		</div>
+		<div class="column">
+			<h1>WEB</h1>
+			<div class="card" id="jsCorrectPassword">
+				<h2>Enter The Correct Password (JS)</h2>
+			</div>
+			<div class="card" id="sqlCorrectPassword">
+				<h2>SQL</h2>
+			</div>
+		</div>
+		<div class="column">
+			<h1>REVERSING</h1>
+			<div class="card" id="stringsCorrectPassword">
+				<h2>Enter Password</h2>
+			</div>
+			<div class="card" id="bufferOverflowPassword">
+				<h2>Buffer Overflow</h2>
+			</div>
+		</div>
+		<div class="column">
+			<h1>FORENSIC</h1>
+			<div class="card" id="jpgCorrectAnswer">
+				<h2>File With Data Appended</h2>
+			</div>
+			<div class="card" id="nefSniffPassword">
+				<h2>Wireshark</h2>
+			</div>
+			<div class="card" id="mountRecover">
+				<h2>Saved Drive, Deleted File</h2>
+			</div>
+		</div>
+	</section>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../scripts/ctf.js"></script>
+</body>
+</html>
