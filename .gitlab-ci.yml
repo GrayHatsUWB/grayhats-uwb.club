@@ -4,6 +4,7 @@ pages:
   stage: deploy
   script:
   - mkdir .public
+  - cp -r .well-known .public
   - cp -r * .public
   - mv .public public
   artifacts:
